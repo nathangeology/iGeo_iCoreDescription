@@ -14,6 +14,10 @@
 		0A95F6341A72AB7700779395 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A95F6331A72AB7700779395 /* Images.xcassets */; };
 		0A95F6371A72AB7700779395 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A95F6351A72AB7700779395 /* LaunchScreen.xib */; };
 		0A95F6431A72AB7700779395 /* iGeo_iCoreDescriptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A95F6421A72AB7700779395 /* iGeo_iCoreDescriptionTests.swift */; };
+		0AE7F9CA1A882C56003521E0 /* AVCamPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7F9C91A882C56003521E0 /* AVCamPreviewView.swift */; };
+		0AE7F9CC1A8836FA003521E0 /* CoreCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE7F9CB1A8836FA003521E0 /* CoreCaptureViewController.swift */; };
+		0AF5299F1A74569000A24CC6 /* CorePhotoOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF5299E1A74569000A24CC6 /* CorePhotoOverlay.swift */; };
+		0AF529A31A7465AC00A24CC6 /* example obj C implementation of overlay view in Resources */ = {isa = PBXBuildFile; fileRef = 0AF529A21A7465AC00A24CC6 /* example obj C implementation of overlay view */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +42,10 @@
 		0A95F63C1A72AB7700779395 /* iGeo_iCoreDescriptionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iGeo_iCoreDescriptionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A95F6411A72AB7700779395 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A95F6421A72AB7700779395 /* iGeo_iCoreDescriptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iGeo_iCoreDescriptionTests.swift; sourceTree = "<group>"; };
+		0AE7F9C91A882C56003521E0 /* AVCamPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AVCamPreviewView.swift; sourceTree = "<group>"; };
+		0AE7F9CB1A8836FA003521E0 /* CoreCaptureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreCaptureViewController.swift; sourceTree = "<group>"; };
+		0AF5299E1A74569000A24CC6 /* CorePhotoOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorePhotoOverlay.swift; sourceTree = "<group>"; };
+		0AF529A21A7465AC00A24CC6 /* example obj C implementation of overlay view */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "example obj C implementation of overlay view"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		0A95F61C1A72AB7700779395 = {
 			isa = PBXGroup;
 			children = (
+				0AF529A21A7465AC00A24CC6 /* example obj C implementation of overlay view */,
 				0A95F6271A72AB7700779395 /* iGeo_iCoreDescription */,
 				0A95F63F1A72AB7700779395 /* iGeo_iCoreDescriptionTests */,
 				0A95F6261A72AB7700779395 /* Products */,
@@ -79,13 +88,20 @@
 		0A95F6271A72AB7700779395 /* iGeo_iCoreDescription */ = {
 			isa = PBXGroup;
 			children = (
+				0A95F64F1A72ABBB00779395 /* WebServiceOptionsTab */,
+				0A95F64E1A72AB9F00779395 /* Map Tab */,
+				0A95F64D1A72AB8F00779395 /* DescribeTab */,
+				0A95F64C1A72AB7F00779395 /* GetCorePhotoTab */,
 				0A95F62A1A72AB7700779395 /* AppDelegate.swift */,
 				0A95F62C1A72AB7700779395 /* FirstViewController.swift */,
+				0AF5299E1A74569000A24CC6 /* CorePhotoOverlay.swift */,
 				0A95F62E1A72AB7700779395 /* SecondViewController.swift */,
+				0AE7F9CB1A8836FA003521E0 /* CoreCaptureViewController.swift */,
 				0A95F6301A72AB7700779395 /* Main.storyboard */,
 				0A95F6331A72AB7700779395 /* Images.xcassets */,
 				0A95F6351A72AB7700779395 /* LaunchScreen.xib */,
 				0A95F6281A72AB7700779395 /* Supporting Files */,
+				0AE7F9C91A882C56003521E0 /* AVCamPreviewView.swift */,
 			);
 			path = iGeo_iCoreDescription;
 			sourceTree = "<group>";
@@ -113,6 +129,34 @@
 				0A95F6411A72AB7700779395 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A95F64C1A72AB7F00779395 /* GetCorePhotoTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = GetCorePhotoTab;
+			sourceTree = "<group>";
+		};
+		0A95F64D1A72AB8F00779395 /* DescribeTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DescribeTab;
+			sourceTree = "<group>";
+		};
+		0A95F64E1A72AB9F00779395 /* Map Tab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Map Tab";
+			sourceTree = "<group>";
+		};
+		0A95F64F1A72ABBB00779395 /* WebServiceOptionsTab */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = WebServiceOptionsTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +208,7 @@
 				TargetAttributes = {
 					0A95F6241A72AB7700779395 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3T67XC9LMM;
 					};
 					0A95F63B1A72AB7700779395 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -197,6 +242,7 @@
 			files = (
 				0A95F6321A72AB7700779395 /* Main.storyboard in Resources */,
 				0A95F6371A72AB7700779395 /* LaunchScreen.xib in Resources */,
+				0AF529A31A7465AC00A24CC6 /* example obj C implementation of overlay view in Resources */,
 				0A95F6341A72AB7700779395 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +262,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A95F62F1A72AB7700779395 /* SecondViewController.swift in Sources */,
+				0AE7F9CA1A882C56003521E0 /* AVCamPreviewView.swift in Sources */,
+				0AE7F9CC1A8836FA003521E0 /* CoreCaptureViewController.swift in Sources */,
 				0A95F62B1A72AB7700779395 /* AppDelegate.swift in Sources */,
+				0AF5299F1A74569000A24CC6 /* CorePhotoOverlay.swift in Sources */,
 				0A95F62D1A72AB7700779395 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +391,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iGeo_iCoreDescription/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = iGeo_iCoreDescription/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +462,7 @@
 				0A95F6481A72AB7700779395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A95F6491A72AB7700779395 /* Build configuration list for PBXNativeTarget "iGeo_iCoreDescriptionTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +471,7 @@
 				0A95F64B1A72AB7700779395 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

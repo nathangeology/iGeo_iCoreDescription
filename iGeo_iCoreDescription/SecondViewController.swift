@@ -7,9 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class SecondViewController: UIViewController {
-
+    //Session Management
+    var session : AVCaptureSession!
+    var deviceInput : AVCaptureDeviceInput!
+    var deviceOuput : AVCaptureStillImageOutput!
+    var sessionQueue: dispatch_queue_t!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +26,12 @@ class SecondViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    //@IBAction func PressTestButton(sender: UIButton) {
+        
+        
+    //}
+    
+    
+    
 }
 
